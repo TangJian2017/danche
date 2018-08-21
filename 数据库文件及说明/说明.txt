@@ -1,0 +1,9 @@
+通过phpmyadmin新建数据库：a501kaoqin  导入数据库文件修改根目录下config.php 的数据库文件，如果是php5.3以上把db_host改为127.0.0.1 如果5.3以下版本可localhost或127.0.0.1 5.3以上用localhost数据库查询会有延迟 
+
+
+如变更数据库名称，用户名密码，或者程序不在根目录（二级目录）可修改配置文件（根目录/二级目录/config.php）
+define('__BASE__', 'http://localhost'); 修改为define('__BASE__', 'http://localhost/二级目录'); 如不修改图片可能不会显示
+
+例如：你的网址是http://localhost/ceshi
+
+那需要把config.php里的http://localhost改为http://localhost/ceshi
